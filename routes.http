@@ -1,0 +1,36 @@
+POST http://localhost:3333/memories
+Content-Type: application/json
+Accept-Language: pt
+
+{
+    "content": "Memoria 02",
+    "coverUrl": "https://github.com/02/silassantos21.png",
+    "isPublic": false
+}
+
+###
+
+PUT http://localhost:3333/memories/02d4d0ab-5015-4960-b0aa-21813f63e5f9
+Content-Type: application/json
+Accept-Language: pt
+
+{
+    "content": "Memoria 01 Bananinha",
+    "coverUrl": "https://github.com/bananinha/silassantos21.png",
+    "isPublic": true
+}
+
+###
+
+DELETE http://localhost:3333/memories/02d4d0ab-5015-4960-b0aa-21813f63e5f9
+
+###
+
+GET http://localhost:3333/memories
+
+###
+
+GET http://localhost:3333/memories?search=node
+
+###
+
